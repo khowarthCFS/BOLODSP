@@ -87,6 +87,7 @@ rm -f /tmp/calibfit.log
 OLD_DAC_EXCITE_AMP="$(get.site 14 DAC_EXCITE_AMP)"
 [ "$BOLO_VERBOSE" -eq 1 ] && echo "Found DAC_EXCITE_AMP=$OLD_DAC_EXCITE_AMP."
 [ "$BOLO_VERBOSE" -eq 1 ] && echo "Setting DAC_EXCITE_AMP to $CALIBFIT_DAC_EXCITE_AMP."
+set.site 14 DAC_EXCITE_AMP=3
 
 set_gains_reset_os_dacs() {
 
