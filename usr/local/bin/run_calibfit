@@ -20,11 +20,6 @@ BOLO_VERBOSE=1
 # available options:
 # -C cooling_theshold -H heating_threshold -t t_wait -T tau_guess
 CALIBFITARGS=""
-set.site 14 DIODE_DROP_V ${1:-0.5}
-set.site 14 TWAIT ${2:-0.1}
-set.site 14 THEAT ${2:-1.0}
-set.site 14 TCOOL ${3:-1.0}
-set.site 14 VBIAS ${4:-1.0}
 LOAD_POWER_FILTERS=1
 BOLO_LOAD_OFFSETS=1
 BOLO_GAIN=1V2
