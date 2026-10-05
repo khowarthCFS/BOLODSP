@@ -35,6 +35,14 @@ $ sync; sync; reboot
 
 ## Package version notes
 
+### 35-bolodsp-2610051000.tgz
+
+Modify the ports at which the automated calibration procedures are available, in order to move them outside of the ephemeral port range (ref [SW-18299](https://cfsenergy.atlassian.net/browse/SW-18299)):
+- bolodspcal1: 45073 -> 5073
+- bolodspcal2: 45074 -> 5074
+- bolodspcal: 45072 -> 5075
+    - Usage of 5075 is intentional. 5072 is configured on the neutrino side for UDP data streaming.
+
 ### 35-bolodsp-2510281805.tgz
 
 Implements a knob for getting calibration results:
